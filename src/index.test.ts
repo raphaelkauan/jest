@@ -1,3 +1,4 @@
+import { calc } from "./func/calculadora/calc";
 import { divisao } from "./func/divisao";
 import { restodivisao } from "./func/restodivisao";
 import { subtracao } from "./func/subtracao";
@@ -28,5 +29,11 @@ describe("subtração", () => {
 describe("resto divisão", () => {
   it("10 / 5 = 5", () => {
     expect(restodivisao(10, 5)).toBe(0);
+  });
+});
+
+describe("calc", () => {
+  it("1 + 5 = 6", () => {
+    expect(calc(1, "+", 5)).toBe(6);
   });
 });
