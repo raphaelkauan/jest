@@ -1,0 +1,25 @@
+Matchers comuns
+
+Matchers verdadeiro
+
+Matchers números 
+
+Matchers strings 
+
+Matchers arrays e iteráveis
+
+Matchers exceções 
+
+- Cobertura de código X Cobertura de testes 
+
+- Tipos de cobertura de testes 
+
+Quais são os tipos de coberturas de testes que são usadas?
+  
+  Função 
+  Instrução 
+  Ramificação 
+  Condição 
+
+- Como metrificar com jest
+  

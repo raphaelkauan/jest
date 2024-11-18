@@ -32,6 +32,7 @@ describe("resto divisão", () => {
   });
 });
 
+// calculadora
 describe("calc", () => {
   it("1 + 5 = 6", () => {
     expect(calc(1, "+", 5)).toBe(6);

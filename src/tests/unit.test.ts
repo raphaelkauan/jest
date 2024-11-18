@@ -28,4 +28,18 @@ describe("teste", () => {
 
     expect(tarefa?.completed).toBeTruthy;
   });
+
+  test("list test", () => {
+    const task1 = taskManager.addTask("pc");
+    const task2 = taskManager.addTask("geladeira");
+
+    taskManager.completeTask(task1.name);
+
+    const tarefas = taskManager.listTasks();
+
+    expect(tarefas).toEqual([
+      { name: "pc", completed: true },
+      { name: "geladeira", completed: false },
+    ]);
+  });
 });
