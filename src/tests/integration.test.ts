@@ -18,4 +18,14 @@ describe("integration test", () => {
 
     expect(taskManager.listTasks().length).toBe(0);
   });
+
+  test("adicionar e completar uma tarefa", () => {
+    taskManager.addTask("teste");
+
+    taskManager.completeTask("teste");
+
+    const task = taskManager.listTasks();
+
+    expect(task[0].completed).toBeTruthy();
+  });
 });
